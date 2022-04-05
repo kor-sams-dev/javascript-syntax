@@ -3,7 +3,7 @@ function Cat(name) {
   // 1. bind 함수를 이용해서 수동적으로 바인딩 해주기
   // this.printName = this.printName.bind(this);
 
-  // 2. arrow gkatnfmf tkdyd: arrow 함수는 렉시컬 환경에서의 this를 기억한다
+  // 2. arrow 함수를 사용: arrow 함수는 렉시컬 환경에서의 this를 기억한다
   // 화살표 함수 밖에서 제일 근접한 스코프의 this를 가리킴
   this.printName = () => {
     console.log(`고양이 이름을 출력 : ${this.name}`);
